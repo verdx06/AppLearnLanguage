@@ -29,13 +29,18 @@ extension OnboardingView {
         
         func next() {
             
-            if !queue.isEmpty  {
+            if queue.isEmpty {
                 save(id: "watched")
                 return
             } else {
+                
                 let index = queue.removeFirst()
                 if index.id == "1" {
                     button = "Next"
+                } else if index.id == "2" {
+                    button = "More"
+                } else if index.id == "3" {
+                    button = "Choose a language"
                 }
                 current = index
                 
