@@ -10,19 +10,94 @@
 		2176B8B62D928B7000FFF6C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2176B8B02D928B7000FFF6C1 /* Preview Assets.xcassets */; };
 		2176B8B72D928B7000FFF6C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2176B8B32D928B7000FFF6C1 /* Assets.xcassets */; };
 		2176B8B82D928B7000FFF6C1 /* AppLearnLanguageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B8B22D928B7000FFF6C1 /* AppLearnLanguageApp.swift */; };
-		2176B8B92D928B7000FFF6C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B8B42D928B7000FFF6C1 /* ContentView.swift */; };
+		2176B8B92D928B7000FFF6C1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B8B42D928B7000FFF6C1 /* OnboardingView.swift */; };
+		2176B8CE2D92AC5B00FFF6C1 /* QueueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B8CD2D92AC5B00FFF6C1 /* QueueModel.swift */; };
+		2176B8D32D92AD0B00FFF6C1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B8D22D92AD0B00FFF6C1 /* Constants.swift */; };
+		2176B8D82D92AE0E00FFF6C1 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B8D72D92AE0E00FFF6C1 /* OnboardingViewModel.swift */; };
+		2176B8FB2D92B3A700FFF6C1 /* Fredoka-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2176B8F82D92B3A700FFF6C1 /* Fredoka-Medium.ttf */; };
+		2176B9052D92B3A700FFF6C1 /* Fredoka-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2176B8F72D92B3A700FFF6C1 /* Fredoka-Light.ttf */; };
+		2176B9072D92B3A700FFF6C1 /* Fredoka-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2176B8F62D92B3A700FFF6C1 /* Fredoka-Bold.ttf */; };
+		2176B9082D92B3A700FFF6C1 /* Fredoka-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2176B8F92D92B3A700FFF6C1 /* Fredoka-Regular.ttf */; };
+		2176B9092D92B3A700FFF6C1 /* Fredoka-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2176B8FA2D92B3A700FFF6C1 /* Fredoka-SemiBold.ttf */; };
+		2176B9172D92B41300FFF6C1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B9162D92B41300FFF6C1 /* View.swift */; };
+		2176B91C2D92B72A00FFF6C1 /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B91B2D92B72A00FFF6C1 /* MainButtonStyle.swift */; };
+		2176B91E2D92B9DE00FFF6C1 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B91D2D92B9DE00FFF6C1 /* StepView.swift */; };
+		2176B9202D92BE5000FFF6C1 /* UserKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B91F2D92BE5000FFF6C1 /* UserKey.swift */; };
+		2176B94E2D92C26100FFF6C1 /* AppLearnLanguageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B94C2D92C26100FFF6C1 /* AppLearnLanguageTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2176B9292D92C19500FFF6C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2176B8972D928B6900FFF6C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2176B89E2D928B6900FFF6C1;
+			remoteInfo = AppLearnLanguage;
+		};
+		2176B93A2D92C1DE00FFF6C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2176B8972D928B6900FFF6C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2176B89E2D928B6900FFF6C1;
+			remoteInfo = AppLearnLanguage;
+		};
+		2176B9472D92C25D00FFF6C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2176B8972D928B6900FFF6C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2176B89E2D928B6900FFF6C1;
+			remoteInfo = AppLearnLanguage;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2176B89F2D928B6900FFF6C1 /* AppLearnLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppLearnLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2176B8B02D928B7000FFF6C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2176B8B22D928B7000FFF6C1 /* AppLearnLanguageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLearnLanguageApp.swift; sourceTree = "<group>"; };
 		2176B8B32D928B7000FFF6C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2176B8B42D928B7000FFF6C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2176B8B42D928B7000FFF6C1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		2176B8CD2D92AC5B00FFF6C1 /* QueueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QueueModel.swift; path = "/Users/verdx/Library/Mobile Documents/.Trash/AppLearnLanguage/AppLearnLanguage/AppLearnLanguage/Model/QueueModel.swift"; sourceTree = "<absolute>"; };
+		2176B8D22D92AD0B00FFF6C1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2176B8D72D92AE0E00FFF6C1 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		2176B8F62D92B3A700FFF6C1 /* Fredoka-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Bold.ttf"; sourceTree = "<group>"; };
+		2176B8F72D92B3A700FFF6C1 /* Fredoka-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Light.ttf"; sourceTree = "<group>"; };
+		2176B8F82D92B3A700FFF6C1 /* Fredoka-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Medium.ttf"; sourceTree = "<group>"; };
+		2176B8F92D92B3A700FFF6C1 /* Fredoka-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-Regular.ttf"; sourceTree = "<group>"; };
+		2176B8FA2D92B3A700FFF6C1 /* Fredoka-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fredoka-SemiBold.ttf"; sourceTree = "<group>"; };
+		2176B9142D92B3BF00FFF6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2176B9162D92B41300FFF6C1 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		2176B91B2D92B72A00FFF6C1 /* MainButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonStyle.swift; sourceTree = "<group>"; };
+		2176B91D2D92B9DE00FFF6C1 /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
+		2176B91F2D92BE5000FFF6C1 /* UserKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKey.swift; sourceTree = "<group>"; };
+		2176B9252D92C19500FFF6C1 /* AppLearnLanguageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppLearnLanguageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2176B9362D92C1DE00FFF6C1 /* AppLearnLanguageTestse.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppLearnLanguageTestse.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2176B9432D92C25D00FFF6C1 /* AppLearnLanguageTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppLearnLanguageTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2176B94C2D92C26100FFF6C1 /* AppLearnLanguageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLearnLanguageTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2176B89C2D928B6900FFF6C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2176B9222D92C19500FFF6C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2176B9332D92C1DE00FFF6C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2176B9402D92C25D00FFF6C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				2176B8B52D928B7000FFF6C1 /* AppLearnLanguage */,
+				2176B94D2D92C26100FFF6C1 /* AppLearnLanguageTests */,
 				2176B8A02D928B6900FFF6C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				2176B89F2D928B6900FFF6C1 /* AppLearnLanguage.app */,
+				2176B9252D92C19500FFF6C1 /* AppLearnLanguageTests.xctest */,
+				2176B9362D92C1DE00FFF6C1 /* AppLearnLanguageTestse.xctest */,
+				2176B9432D92C25D00FFF6C1 /* AppLearnLanguageTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,12 +138,129 @@
 		2176B8B52D928B7000FFF6C1 /* AppLearnLanguage */ = {
 			isa = PBXGroup;
 			children = (
+				2176B9142D92B3BF00FFF6C1 /* Info.plist */,
 				2176B8B22D928B7000FFF6C1 /* AppLearnLanguageApp.swift */,
-				2176B8B42D928B7000FFF6C1 /* ContentView.swift */,
+				2176B9182D92B6C500FFF6C1 /* Components */,
+				2176B9192D92B6D300FFF6C1 /* Core */,
 				2176B8B32D928B7000FFF6C1 /* Assets.xcassets */,
 				2176B8B12D928B7000FFF6C1 /* Preview Content */,
 			);
 			path = AppLearnLanguage;
+			sourceTree = "<group>";
+		};
+		2176B8CA2D92AC3300FFF6C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2176B8CD2D92AC5B00FFF6C1 /* QueueModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2176B8CB2D92AC3700FFF6C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2176B8D42D92ADE200FFF6C1 /* Onboarding */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2176B8CC2D92AC3800FFF6C1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2176B8D12D92ACF900FFF6C1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2176B8D22D92AD0B00FFF6C1 /* Constants.swift */,
+				2176B91F2D92BE5000FFF6C1 /* UserKey.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2176B8D42D92ADE200FFF6C1 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2176B8D52D92ADEB00FFF6C1 /* View */,
+				2176B8D62D92ADED00FFF6C1 /* ViewModel */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		2176B8D52D92ADEB00FFF6C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2176B8B42D928B7000FFF6C1 /* OnboardingView.swift */,
+				2176B91D2D92B9DE00FFF6C1 /* StepView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2176B8D62D92ADED00FFF6C1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2176B8D72D92AE0E00FFF6C1 /* OnboardingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2176B8D92D92B2FD00FFF6C1 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				2176B8F62D92B3A700FFF6C1 /* Fredoka-Bold.ttf */,
+				2176B8F72D92B3A700FFF6C1 /* Fredoka-Light.ttf */,
+				2176B8F82D92B3A700FFF6C1 /* Fredoka-Medium.ttf */,
+				2176B8F92D92B3A700FFF6C1 /* Fredoka-Regular.ttf */,
+				2176B8FA2D92B3A700FFF6C1 /* Fredoka-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		2176B9152D92B3FB00FFF6C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2176B9162D92B41300FFF6C1 /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2176B9182D92B6C500FFF6C1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2176B91A2D92B6F800FFF6C1 /* Style */,
+				2176B9152D92B3FB00FFF6C1 /* Extensions */,
+				2176B8D92D92B2FD00FFF6C1 /* Font */,
+				2176B8D12D92ACF900FFF6C1 /* Helpers */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2176B9192D92B6D300FFF6C1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2176B8CA2D92AC3300FFF6C1 /* Model */,
+				2176B8CB2D92AC3700FFF6C1 /* View */,
+				2176B8CC2D92AC3800FFF6C1 /* ViewModel */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2176B91A2D92B6F800FFF6C1 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				2176B91B2D92B72A00FFF6C1 /* MainButtonStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		2176B94D2D92C26100FFF6C1 /* AppLearnLanguageTests */ = {
+			isa = PBXGroup;
+			children = (
+				2176B94C2D92C26100FFF6C1 /* AppLearnLanguageTests.swift */,
+			);
+			path = AppLearnLanguageTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +285,66 @@
 			productReference = 2176B89F2D928B6900FFF6C1 /* AppLearnLanguage.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2176B9242D92C19500FFF6C1 /* AppLearnLanguageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2176B92B2D92C19500FFF6C1 /* Build configuration list for PBXNativeTarget "AppLearnLanguageTests" */;
+			buildPhases = (
+				2176B9212D92C19500FFF6C1 /* Sources */,
+				2176B9222D92C19500FFF6C1 /* Frameworks */,
+				2176B9232D92C19500FFF6C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2176B92A2D92C19500FFF6C1 /* PBXTargetDependency */,
+			);
+			name = AppLearnLanguageTests;
+			packageProductDependencies = (
+			);
+			productName = AppLearnLanguageTests;
+			productReference = 2176B9252D92C19500FFF6C1 /* AppLearnLanguageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2176B9352D92C1DE00FFF6C1 /* AppLearnLanguageTestse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2176B93C2D92C1DE00FFF6C1 /* Build configuration list for PBXNativeTarget "AppLearnLanguageTestse" */;
+			buildPhases = (
+				2176B9322D92C1DE00FFF6C1 /* Sources */,
+				2176B9332D92C1DE00FFF6C1 /* Frameworks */,
+				2176B9342D92C1DE00FFF6C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2176B93B2D92C1DE00FFF6C1 /* PBXTargetDependency */,
+			);
+			name = AppLearnLanguageTestse;
+			packageProductDependencies = (
+			);
+			productName = AppLearnLanguageTestse;
+			productReference = 2176B9362D92C1DE00FFF6C1 /* AppLearnLanguageTestse.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2176B9422D92C25D00FFF6C1 /* AppLearnLanguageTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2176B94B2D92C25D00FFF6C1 /* Build configuration list for PBXNativeTarget "AppLearnLanguageTest" */;
+			buildPhases = (
+				2176B93F2D92C25D00FFF6C1 /* Sources */,
+				2176B9402D92C25D00FFF6C1 /* Frameworks */,
+				2176B9412D92C25D00FFF6C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2176B9482D92C25D00FFF6C1 /* PBXTargetDependency */,
+			);
+			name = AppLearnLanguageTest;
+			packageProductDependencies = (
+			);
+			productName = AppLearnLanguageTest;
+			productReference = 2176B9432D92C25D00FFF6C1 /* AppLearnLanguageTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +357,18 @@
 				TargetAttributes = {
 					2176B89E2D928B6900FFF6C1 = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					2176B9242D92C19500FFF6C1 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 2176B89E2D928B6900FFF6C1;
+					};
+					2176B9352D92C1DE00FFF6C1 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 2176B89E2D928B6900FFF6C1;
+					};
+					2176B9422D92C25D00FFF6C1 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 2176B89E2D928B6900FFF6C1;
 					};
 				};
 			};
@@ -119,6 +387,9 @@
 			projectRoot = "";
 			targets = (
 				2176B89E2D928B6900FFF6C1 /* AppLearnLanguage */,
+				2176B9242D92C19500FFF6C1 /* AppLearnLanguageTests */,
+				2176B9352D92C1DE00FFF6C1 /* AppLearnLanguageTestse */,
+				2176B9422D92C25D00FFF6C1 /* AppLearnLanguageTest */,
 			);
 		};
 /* End PBXProject section */
@@ -129,7 +400,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				2176B8B62D928B7000FFF6C1 /* Preview Assets.xcassets in Resources */,
+				2176B8FB2D92B3A700FFF6C1 /* Fredoka-Medium.ttf in Resources */,
+				2176B9052D92B3A700FFF6C1 /* Fredoka-Light.ttf in Resources */,
+				2176B9072D92B3A700FFF6C1 /* Fredoka-Bold.ttf in Resources */,
+				2176B9082D92B3A700FFF6C1 /* Fredoka-Regular.ttf in Resources */,
+				2176B9092D92B3A700FFF6C1 /* Fredoka-SemiBold.ttf in Resources */,
 				2176B8B72D928B7000FFF6C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2176B9232D92C19500FFF6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2176B9342D92C1DE00FFF6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2176B9412D92C25D00FFF6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,12 +437,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2176B9202D92BE5000FFF6C1 /* UserKey.swift in Sources */,
+				2176B91E2D92B9DE00FFF6C1 /* StepView.swift in Sources */,
+				2176B8D82D92AE0E00FFF6C1 /* OnboardingViewModel.swift in Sources */,
 				2176B8B82D928B7000FFF6C1 /* AppLearnLanguageApp.swift in Sources */,
-				2176B8B92D928B7000FFF6C1 /* ContentView.swift in Sources */,
+				2176B8B92D928B7000FFF6C1 /* OnboardingView.swift in Sources */,
+				2176B8CE2D92AC5B00FFF6C1 /* QueueModel.swift in Sources */,
+				2176B9172D92B41300FFF6C1 /* View.swift in Sources */,
+				2176B8D32D92AD0B00FFF6C1 /* Constants.swift in Sources */,
+				2176B91C2D92B72A00FFF6C1 /* MainButtonStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2176B9212D92C19500FFF6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2176B9322D92C1DE00FFF6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2176B93F2D92C25D00FFF6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2176B94E2D92C26100FFF6C1 /* AppLearnLanguageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2176B92A2D92C19500FFF6C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2176B89E2D928B6900FFF6C1 /* AppLearnLanguage */;
+			targetProxy = 2176B9292D92C19500FFF6C1 /* PBXContainerItemProxy */;
+		};
+		2176B93B2D92C1DE00FFF6C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2176B89E2D928B6900FFF6C1 /* AppLearnLanguage */;
+			targetProxy = 2176B93A2D92C1DE00FFF6C1 /* PBXContainerItemProxy */;
+		};
+		2176B9482D92C25D00FFF6C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2176B89E2D928B6900FFF6C1 /* AppLearnLanguage */;
+			targetProxy = 2176B9472D92C25D00FFF6C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2176B8AB2D928B6B00FFF6C1 /* Debug */ = {
@@ -278,6 +622,7 @@
 				DEVELOPMENT_TEAM = 74A6F279YB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppLearnLanguage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,6 +652,7 @@
 				DEVELOPMENT_TEAM = 74A6F279YB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppLearnLanguage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -322,6 +668,114 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2176B92C2D92C19500FFF6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74A6F279YB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = verdx.AppLearnLanguageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppLearnLanguage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppLearnLanguage";
+			};
+			name = Debug;
+		};
+		2176B92D2D92C19500FFF6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74A6F279YB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = verdx.AppLearnLanguageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppLearnLanguage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppLearnLanguage";
+			};
+			name = Release;
+		};
+		2176B93D2D92C1DE00FFF6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74A6F279YB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = verdx.AppLearnLanguageTestse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppLearnLanguage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppLearnLanguage";
+			};
+			name = Debug;
+		};
+		2176B93E2D92C1DE00FFF6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74A6F279YB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = verdx.AppLearnLanguageTestse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppLearnLanguage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppLearnLanguage";
+			};
+			name = Release;
+		};
+		2176B9492D92C25D00FFF6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74A6F279YB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = verdx.AppLearnLanguageTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppLearnLanguage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppLearnLanguage";
+			};
+			name = Debug;
+		};
+		2176B94A2D92C25D00FFF6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74A6F279YB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = verdx.AppLearnLanguageTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppLearnLanguage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppLearnLanguage";
 			};
 			name = Release;
 		};
@@ -342,6 +796,33 @@
 			buildConfigurations = (
 				2176B8AE2D928B6B00FFF6C1 /* Debug */,
 				2176B8AF2D928B6B00FFF6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2176B92B2D92C19500FFF6C1 /* Build configuration list for PBXNativeTarget "AppLearnLanguageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2176B92C2D92C19500FFF6C1 /* Debug */,
+				2176B92D2D92C19500FFF6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2176B93C2D92C1DE00FFF6C1 /* Build configuration list for PBXNativeTarget "AppLearnLanguageTestse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2176B93D2D92C1DE00FFF6C1 /* Debug */,
+				2176B93E2D92C1DE00FFF6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2176B94B2D92C25D00FFF6C1 /* Build configuration list for PBXNativeTarget "AppLearnLanguageTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2176B9492D92C25D00FFF6C1 /* Debug */,
+				2176B94A2D92C25D00FFF6C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

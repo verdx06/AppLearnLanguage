@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct AppLearnLanguageApp: App {
+    
+    let lastWatched: String?
+    
+    init() {
+        lastWatched = UserDefaults.standard.string(forKey: UserKey.lastWatched.rawValue)
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if lastWatched == "watched" {
+                
+            } else {
+                OnboardingView()
+            }
         }
     }
 }
