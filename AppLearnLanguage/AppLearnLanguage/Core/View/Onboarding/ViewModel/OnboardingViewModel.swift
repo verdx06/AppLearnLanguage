@@ -17,35 +17,34 @@ extension OnboardingView {
         init(customqueue: [QueueModel]? = nil, lastKey: String? = nil) {
             self.queue = customqueue ?? queue
             self.lastKey = lastKey
-            if let lastWatch = UserDefaults.standard.string(forKey: lastKey ?? UserKey.lastWatched.rawValue) {
-                if let _ = queue.first(where: { $0.id == lastWatch }) {
-                    if let index = queue.firstIndex(where: { $0.id == lastWatch }) {
-                        self.queue.removeFirst(index)
-                    }
-                }
-            }
+            lastScreen()
             next()
         }
         
         func next() {
             
-            if queue.isEmpty {
+            guard !queue.isEmpty else {
                 save(id: "watched")
                 return
-            } else {
-                
-                let index = queue.removeFirst()
-                if index.id == "1" {
-                    button = "Next"
-                } else if index.id == "2" {
-                    button = "More"
-                } else if index.id == "3" {
-                    button = "Choose a language"
-                }
-                current = index
-                
-                save(id: index.id)
             }
+            
+            let index = queue.removeFirst()
+            
+            switch index.id {
+            case "1" :
+                button = "Next"
+            case "2" :
+                button = "More"
+            case "3" :
+                button = "Choose a language"
+                
+            default:
+                button = ""
+            }
+            
+            current = index
+            
+            save(id: index.id)
             
         }
         
@@ -55,6 +54,16 @@ extension OnboardingView {
         
         func save(id: String) {
             UserDefaults.standard.set(id, forKey: UserKey.lastWatched.rawValue)
+        }
+        
+        private func lastScreen() {
+            if let lastWatch = UserDefaults.standard.string(forKey: lastKey ?? UserKey.lastWatched.rawValue) {
+                if let _ = queue.first(where: { $0.id == lastWatch }) {
+                    if let index = queue.firstIndex(where: { $0.id == lastWatch }) {
+                        self.queue.removeFirst(index)
+                    }
+                }
+            }
         }
         
     }
