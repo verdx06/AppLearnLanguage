@@ -35,6 +35,7 @@ extension View {
                     .padding(.top, 107)
             }
         }.edgesIgnoringSafeArea(.top)
+            .navigationBarBackButtonHidden(true)
     }
     
 }

@@ -23,6 +23,8 @@
 		2176B91E2D92B9DE00FFF6C1 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B91D2D92B9DE00FFF6C1 /* StepView.swift */; };
 		2176B9202D92BE5000FFF6C1 /* UserKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B91F2D92BE5000FFF6C1 /* UserKey.swift */; };
 		21A4915E2D940B150049BD16 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21A4915C2D940B150049BD16 /* Localizable.strings */; };
+		21A491642D9416830049BD16 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A491632D9416830049BD16 /* LoginView.swift */; };
+		21A491682D9416C10049BD16 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A491652D9416C10049BD16 /* SignupView.swift */; };
 		21D28F952D92FFEC00503022 /* SelectLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D28F942D92FFEC00503022 /* SelectLanguageView.swift */; };
 		21D28F982D93003800503022 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D28F972D93003800503022 /* HeaderView.swift */; };
 		21D28F9A2D9309FB00503022 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D28F992D9309FB00503022 /* Language.swift */; };
@@ -30,6 +32,8 @@
 		21D34D622D9337A50025979F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D34D612D9337A50025979F /* ContentView.swift */; };
 		21D34D7C2D93DB4D0025979F /* WordGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D34D7B2D93DB4D0025979F /* WordGameView.swift */; };
 		21D34D802D93E00B0025979F /* LanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D34D7F2D93E00B0025979F /* LanguageViewModel.swift */; };
+		21F99D382D9435C20082DD2D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F99D372D9435C20082DD2D /* CustomTextField.swift */; };
+		21F99D3B2D94365F0082DD2D /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F99D392D94365F0082DD2D /* SignupViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,8 @@
 		2176B94C2D92C26100FFF6C1 /* AppLearnLanguageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLearnLanguageTests.swift; sourceTree = "<group>"; };
 		21A4915D2D940B150049BD16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		21A4915F2D940B180049BD16 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		21A491632D9416830049BD16 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		21A491652D9416C10049BD16 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		21D28F942D92FFEC00503022 /* SelectLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLanguageView.swift; sourceTree = "<group>"; };
 		21D28F972D93003800503022 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		21D28F992D9309FB00503022 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
@@ -84,6 +90,8 @@
 		21D34D612D9337A50025979F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		21D34D7B2D93DB4D0025979F /* WordGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameView.swift; sourceTree = "<group>"; };
 		21D34D7F2D93E00B0025979F /* LanguageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewModel.swift; sourceTree = "<group>"; };
+		21F99D372D9435C20082DD2D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		21F99D392D94365F0082DD2D /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +163,8 @@
 		2176B8CB2D92AC3700FFF6C1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				21A491612D9416700049BD16 /* Login */,
+				21A491672D9416C10049BD16 /* Signup */,
 				21D34D792D93DB2D0025979F /* WordGame */,
 				21D28F912D92FF7100503022 /* SelectLanguage */,
 				2176B8D42D92ADE200FFF6C1 /* Onboarding */,
@@ -263,6 +273,39 @@
 			path = AppLearnLanguageTests;
 			sourceTree = "<group>";
 		};
+		21A491612D9416700049BD16 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				21A491622D9416770049BD16 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		21A491622D9416770049BD16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21A491632D9416830049BD16 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21A491662D9416C10049BD16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21A491652D9416C10049BD16 /* SignupView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		21A491672D9416C10049BD16 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				21A491662D9416C10049BD16 /* View */,
+				21F99D3A2D94365F0082DD2D /* ViewModel */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
 		21D28F912D92FF7100503022 /* SelectLanguage */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				21D28F972D93003800503022 /* HeaderView.swift */,
+				21F99D372D9435C20082DD2D /* CustomTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -319,6 +363,14 @@
 				21D34D7B2D93DB4D0025979F /* WordGameView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		21F99D3A2D94365F0082DD2D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				21F99D392D94365F0082DD2D /* SignupViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F99D3B2D94365F0082DD2D /* SignupViewModel.swift in Sources */,
 				2176B9202D92BE5000FFF6C1 /* UserKey.swift in Sources */,
 				2176B91E2D92B9DE00FFF6C1 /* StepView.swift in Sources */,
 				2176B8D82D92AE0E00FFF6C1 /* OnboardingViewModel.swift in Sources */,
@@ -444,12 +497,15 @@
 				21D28F952D92FFEC00503022 /* SelectLanguageView.swift in Sources */,
 				2176B8B92D928B7000FFF6C1 /* OnboardingView.swift in Sources */,
 				21D34D5D2D9336F20025979F /* QueueModel.swift in Sources */,
+				21F99D382D9435C20082DD2D /* CustomTextField.swift in Sources */,
 				21D28F982D93003800503022 /* HeaderView.swift in Sources */,
 				21D34D7C2D93DB4D0025979F /* WordGameView.swift in Sources */,
+				21A491682D9416C10049BD16 /* SignupView.swift in Sources */,
 				2176B9172D92B41300FFF6C1 /* View.swift in Sources */,
 				21D28F9A2D9309FB00503022 /* Language.swift in Sources */,
 				21D34D622D9337A50025979F /* ContentView.swift in Sources */,
 				2176B8D32D92AD0B00FFF6C1 /* Constants.swift in Sources */,
+				21A491642D9416830049BD16 /* LoginView.swift in Sources */,
 				2176B91C2D92B72A00FFF6C1 /* MainButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,7 +592,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -593,7 +649,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

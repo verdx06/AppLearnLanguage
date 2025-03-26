@@ -20,6 +20,7 @@ struct Language: View {
                 .cornerRadius(12)
             
             Text(text)
+                .fredokaFont(size: 22, font: .medium)
                 .foregroundColor(isSelected ? .white : .primary)
         }
         .padding(.horizontal)

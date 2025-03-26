@@ -10,6 +10,8 @@ import Foundation
 extension SelectLanguageView {
     final class ViewModel: ObservableObject {
         
+        @Published var isNavigate: Bool = false
+        
         @Published var languages = ["Russian", "English", "Chinese", "Belarus", "Kazakh"]
         @Published var systemLanguage = Locale.current.language.languageCode?.identifier
         @Published var systemLanguageString: String? = {
@@ -23,6 +25,7 @@ extension SelectLanguageView {
             
             UserDefaults.standard.set([languageCode], forKey: "AppleLanguages")
             UserDefaults.standard.synchronize()
+            UserDefaults.standard.set("languageSelected", forKey: UserKey.lastWatched.rawValue)
             
         }
         

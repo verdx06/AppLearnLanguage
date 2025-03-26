@@ -13,6 +13,7 @@ extension OnboardingView {
         @Published var current: QueueModel?
         @Published var button: String = ""
         @Published var lastKey: String?
+        @Published var isNavigate: Bool = false
         
         init(customqueue: [QueueModel]? = nil, lastKey: String? = nil) {
             self.queue = customqueue ?? queue
@@ -24,6 +25,7 @@ extension OnboardingView {
         func next() {
             
             guard !queue.isEmpty else {
+                self.isNavigate = true
                 save(id: "watched")
                 return
             }
@@ -49,6 +51,7 @@ extension OnboardingView {
         }
         
         func skip() {
+            self.isNavigate = true
             save(id: "watched")
         }
         
