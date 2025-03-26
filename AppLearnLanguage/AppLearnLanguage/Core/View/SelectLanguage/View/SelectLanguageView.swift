@@ -11,10 +11,12 @@ struct SelectLanguageView: View {
     
     @StateObject var vm = ViewModel()
     @State var isSelected: String = ""
+    @State var isAlert: Bool = false
     @State private var systemLanguage: String? = {
         let preferredLanguage = Locale.preferredLanguages.first ?? "en"
         let systemCode = Locale(identifier: preferredLanguage).languageCode ?? "en"
-        return Locale.current.localizedString(forLanguageCode: systemCode)
+        let englishLocale = Locale(identifier: "en_US")
+        return englishLocale.localizedString(forLanguageCode: systemCode)?.capitalized
     }()
     
     
@@ -32,9 +34,29 @@ struct SelectLanguageView: View {
                         Language(text: language, isSelected: isSelected == language)
                     }
                 }
+                
                 Spacer()
+                
+                Button {
+                    if isSelected == systemLanguage {
+                        if let system = vm.systemLanguage {
+                            vm.setNewLanguage(system)
+                        }
+                    } else if isSelected == "English" {
+                        vm.setNewLanguage("en")
+                        isAlert = true
+                    }
+                } label: {
+                    Text("Choose")
+                }.buttonStyle(MainButtonStyle())
+
+                
             }
-        }.header("Language select")
+        }
+        .alert("Перезапустите приложение", isPresented: $isAlert) {
+            Button("OK", role: .cancel) {}
+        }
+        .header("Language select")
     }
 }
 

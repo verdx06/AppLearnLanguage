@@ -22,6 +22,7 @@
 		2176B91C2D92B72A00FFF6C1 /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B91B2D92B72A00FFF6C1 /* MainButtonStyle.swift */; };
 		2176B91E2D92B9DE00FFF6C1 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B91D2D92B9DE00FFF6C1 /* StepView.swift */; };
 		2176B9202D92BE5000FFF6C1 /* UserKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B91F2D92BE5000FFF6C1 /* UserKey.swift */; };
+		21A4915E2D940B150049BD16 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21A4915C2D940B150049BD16 /* Localizable.strings */; };
 		21D28F952D92FFEC00503022 /* SelectLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D28F942D92FFEC00503022 /* SelectLanguageView.swift */; };
 		21D28F982D93003800503022 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D28F972D93003800503022 /* HeaderView.swift */; };
 		21D28F9A2D9309FB00503022 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D28F992D9309FB00503022 /* Language.swift */; };
@@ -74,6 +75,8 @@
 		2176B91F2D92BE5000FFF6C1 /* UserKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKey.swift; sourceTree = "<group>"; };
 		2176B9252D92C19500FFF6C1 /* AppLearnLanguageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppLearnLanguageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2176B94C2D92C26100FFF6C1 /* AppLearnLanguageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLearnLanguageTests.swift; sourceTree = "<group>"; };
+		21A4915D2D940B150049BD16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		21A4915F2D940B180049BD16 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		21D28F942D92FFEC00503022 /* SelectLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLanguageView.swift; sourceTree = "<group>"; };
 		21D28F972D93003800503022 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		21D28F992D9309FB00503022 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
@@ -282,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				21D34D7F2D93E00B0025979F /* LanguageViewModel.swift */,
+				21A4915C2D940B150049BD16 /* Localizable.strings */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -385,6 +389,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 2176B8962D928B6900FFF6C1;
 			minimizedProjectReferenceProxies = 1;
@@ -411,6 +416,7 @@
 				2176B9052D92B3A700FFF6C1 /* Fredoka-Light.ttf in Resources */,
 				2176B9072D92B3A700FFF6C1 /* Fredoka-Bold.ttf in Resources */,
 				2176B9082D92B3A700FFF6C1 /* Fredoka-Regular.ttf in Resources */,
+				21A4915E2D940B150049BD16 /* Localizable.strings in Resources */,
 				2176B9092D92B3A700FFF6C1 /* Fredoka-SemiBold.ttf in Resources */,
 				2176B8B72D928B7000FFF6C1 /* Assets.xcassets in Resources */,
 			);
@@ -464,6 +470,18 @@
 			targetProxy = 2176B9292D92C19500FFF6C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21A4915C2D940B150049BD16 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21A4915D2D940B150049BD16 /* en */,
+				21A4915F2D940B180049BD16 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2176B8AB2D928B6B00FFF6C1 /* Debug */ = {

@@ -10,17 +10,21 @@ import Foundation
 extension SelectLanguageView {
     final class ViewModel: ObservableObject {
         
-        let languageCode: [String:String] = [
-            "ru" : "Russian",
-            "en" : "English",
-            "zh" : "Chinese",
-            "be" : "Belarus",
-            "kk" : "Kazakh"
-        ]
-        
         @Published var languages = ["Russian", "English", "Chinese", "Belarus", "Kazakh"]
-        @Published var systemLanguage = Locale.current.language
+        @Published var systemLanguage = Locale.current.language.languageCode?.identifier
+        @Published var systemLanguageString: String? = {
+            let preferredLanguage = Locale.preferredLanguages.first ?? "en"
+            let systemCode = Locale(identifier: preferredLanguage).languageCode ?? "en"
+            let englishLocale = Locale(identifier: "en_US")
+            return englishLocale.localizedString(forLanguageCode: systemCode)?.capitalized
+        }()
 
+        func setNewLanguage(_ languageCode: String) {
+            
+            UserDefaults.standard.set([languageCode], forKey: "AppleLanguages")
+            UserDefaults.standard.synchronize()
+            
+        }
         
     }
 }
