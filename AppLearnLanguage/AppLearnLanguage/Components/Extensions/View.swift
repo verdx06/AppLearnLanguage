@@ -25,5 +25,17 @@ extension View {
                 .font(.custom("Fredoka-Regular", size: size))
         }
     }
+    
+    func header(_ title: String, action: (() -> Void)? = nil) -> some View {
+        ZStack(alignment: .top){
+            HeaderView(header: title, action: action)
+                .frame(height: 102)
+            VStack {
+                self
+                    .padding(.top, 107)
+            }
+        }.edgesIgnoringSafeArea(.top)
+    }
+    
 }
 

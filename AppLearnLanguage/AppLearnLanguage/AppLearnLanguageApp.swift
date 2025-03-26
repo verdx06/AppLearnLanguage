@@ -19,7 +19,7 @@ struct AppLearnLanguageApp: App {
     var body: some Scene {
         WindowGroup {
             if lastWatched == "watched" {
-                
+                SelectLanguageView()
             } else {
                 OnboardingView()
             }
