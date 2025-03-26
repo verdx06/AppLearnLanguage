@@ -25,6 +25,7 @@ struct SelectLanguageView: View {
                         }
                     } label: {
                         Language(text: language, isSelected: isSelected == language)
+                            .padding(.horizontal)
                     }
                 }
                 
@@ -45,7 +46,7 @@ struct SelectLanguageView: View {
                 }.buttonStyle(MainButtonStyle())
                 
             }
-        }
+        }.padding(.horizontal)
         .fullScreenCover(isPresented: $vm.isNavigate, content: {
             SignupView()
         })

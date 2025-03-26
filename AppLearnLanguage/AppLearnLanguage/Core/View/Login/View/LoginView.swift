@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @Environment(\.dismiss) var dismiss
+    @ObservedObject var svm = SignViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            CustomTextField(name: "Login", example: "Login", text: $svm.email)
+            CustomTextField(name: "Password", example: "Password", text: $svm.password, security: true)
+            Button {
+                svm.signin()
+            } label: {
+                Text("Confirm")
+            }.buttonStyle(MainButtonStyle(isProgress: svm.isProgress))
+
+            Spacer()
+        }.header("Login") {
+            dismiss()
+        }
     }
 }
 

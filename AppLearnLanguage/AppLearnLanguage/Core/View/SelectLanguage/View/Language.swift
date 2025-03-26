@@ -17,13 +17,12 @@ struct Language: View {
                 .frame(maxWidth: .infinity)
                 .frame(height: 67)
                 .foregroundColor(isSelected ? Color.selectLanguage : Color.notSelectLanguage)
-                .cornerRadius(12)
+                .cornerRadius(15)
             
             Text(text)
                 .fredokaFont(size: 22, font: .medium)
                 .foregroundColor(isSelected ? .white : .primary)
         }
-        .padding(.horizontal)
         .padding(.vertical, 4)
     }
 }
