@@ -38,5 +38,9 @@ extension View {
             .navigationBarBackButtonHidden(true)
     }
     
+    func network(_ alertConnect: Binding<Bool>) {
+        self.modifier(NetworkModifier(isConnecting: alertConnect))
+    }
+    
 }
 

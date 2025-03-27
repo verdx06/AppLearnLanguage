@@ -14,6 +14,7 @@ struct PasswordView: View {
     let lastName: String
     
     @ObservedObject var svm = SignViewModel()
+    @State var isConnected: Bool = false
     
     @Environment(\.dismiss) var dismiss
     
@@ -32,7 +33,11 @@ struct PasswordView: View {
                 
                 VStack {
                     HStack(spacing: 0) {
-                        Image("checkbox")
+                        Button {
+                            svm.isCheckBox.toggle()
+                        } label: {
+                            Image("checkbox")
+                        }
                         Text("  I ")
                             .fredokaFont(size: 17)
                         NavigationLink {
@@ -55,10 +60,7 @@ struct PasswordView: View {
                 }
                 
                 Button {
-                    if svm.password == svm.confirmPassword && svm.password.count >= 8 {
-                        svm.email = email
-                        svm.Firstname = firstName
-                        svm.Lastname = lastName
+                    if svm.checkSignup() {
                         svm.signup()
                     }
                 } label: {
@@ -80,7 +82,14 @@ struct PasswordView: View {
                 }.padding(.top)
                 
                 Spacer(minLength: 170)
-            }.navigationDestination(isPresented: $svm.isNavigate, destination: {
+            }
+            .modifier(NetworkModifier(isConnecting: $isConnected))
+            .onAppear(perform: {
+                svm.email = email
+                svm.Firstname = firstName
+                svm.Lastname = lastName
+            })
+            .navigationDestination(isPresented: $svm.isNavigate, destination: {
                 ProfileView()
             })
             .padding(.horizontal)

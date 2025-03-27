@@ -10,6 +10,7 @@ import SwiftUI
 struct SignupView: View {
     
     @StateObject var svm = SignViewModel()
+    @State var isConnected = false
     
     var body: some View {
         NavigationStack {
@@ -48,9 +49,11 @@ struct SignupView: View {
                 }.padding(.top)
                 
                 Spacer(minLength: 170)
-            }.navigationDestination(isPresented: $svm.isNavigate, destination: {
+            }
+            .navigationDestination(isPresented: $svm.isNavigate, destination: {
                 PasswordView(email: svm.email, firstName: svm.Firstname, lastName: svm.Lastname)
             })
+            .modifier(NetworkModifier(isConnecting: $isConnected))
             .padding(.horizontal)
                 .header("Signup")
         }

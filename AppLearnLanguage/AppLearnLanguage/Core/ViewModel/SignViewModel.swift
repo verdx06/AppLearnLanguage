@@ -23,6 +23,7 @@ final class SignViewModel: ObservableObject {
     
     @Published var password: String = ""
     @Published var confirmPassword: String = ""
+    @Published var isCheckBox: Bool = false
     
     @Published var isNavigate: Bool = false
     @Published var isProgress: Bool = false
@@ -114,5 +115,17 @@ final class SignViewModel: ObservableObject {
                 print("signin \(error)")
             }
         }
+    }
+    
+    func checkSignup() -> Bool {
+        let checkbox = isCheckBox
+        let count = password.count >= 8
+        let low = password.contains { $0.isLowercase }
+        let up = password.contains { $0.isUppercase }
+        let digit = password.contains { $0.isNumber }
+        let symb = password.rangeOfCharacter(from: .symbols) != nil ||
+        password.rangeOfCharacter(from: .punctuationCharacters) != nil
+        
+        return checkbox && low && up && digit && symb && count
     }
 }

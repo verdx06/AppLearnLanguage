@@ -37,6 +37,9 @@
 		21F99D412D9443310082DD2D /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F99D402D9443310082DD2D /* PDFKitView.swift */; };
 		21F99D442D94481D0082DD2D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 21F99D432D94481D0082DD2D /* Alamofire */; };
 		21F99D482D9463880082DD2D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F99D472D9463880082DD2D /* ProfileView.swift */; };
+		21F99D4B2D9521810082DD2D /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F99D4A2D9521810082DD2D /* NetworkModel.swift */; };
+		21F99D4D2D9526B30082DD2D /* NetworkModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F99D4C2D9526B30082DD2D /* NetworkModifier.swift */; };
+		21F99D4F2D952E520082DD2D /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F99D4E2D952E520082DD2D /* NetworkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,9 @@
 		21F99D3E2D943E5E0082DD2D /* SignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewModel.swift; sourceTree = "<group>"; };
 		21F99D402D9443310082DD2D /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
 		21F99D472D9463880082DD2D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		21F99D4A2D9521810082DD2D /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		21F99D4C2D9526B30082DD2D /* NetworkModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModifier.swift; sourceTree = "<group>"; };
+		21F99D4E2D952E520082DD2D /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,7 @@
 		2176B8CA2D92AC3300FFF6C1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				21F99D492D95216C0082DD2D /* Service */,
 				21D34D5C2D9336F20025979F /* QueueModel.swift */,
 			);
 			path = Model;
@@ -346,6 +353,8 @@
 			children = (
 				21D28F972D93003800503022 /* HeaderView.swift */,
 				21F99D372D9435C20082DD2D /* CustomTextField.swift */,
+				21F99D4C2D9526B30082DD2D /* NetworkModifier.swift */,
+				21F99D4E2D952E520082DD2D /* NetworkView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -387,6 +396,14 @@
 				21F99D472D9463880082DD2D /* ProfileView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		21F99D492D95216C0082DD2D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				21F99D4A2D9521810082DD2D /* NetworkModel.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,11 +525,14 @@
 			files = (
 				2176B9202D92BE5000FFF6C1 /* UserKey.swift in Sources */,
 				2176B91E2D92B9DE00FFF6C1 /* StepView.swift in Sources */,
+				21F99D4D2D9526B30082DD2D /* NetworkModifier.swift in Sources */,
+				21F99D4B2D9521810082DD2D /* NetworkModel.swift in Sources */,
 				2176B8D82D92AE0E00FFF6C1 /* OnboardingViewModel.swift in Sources */,
 				2176B8B82D928B7000FFF6C1 /* AppLearnLanguageApp.swift in Sources */,
 				21D34D802D93E00B0025979F /* LanguageViewModel.swift in Sources */,
 				21D28F952D92FFEC00503022 /* SelectLanguageView.swift in Sources */,
 				2176B8B92D928B7000FFF6C1 /* OnboardingView.swift in Sources */,
+				21F99D4F2D952E520082DD2D /* NetworkView.swift in Sources */,
 				21D34D5D2D9336F20025979F /* QueueModel.swift in Sources */,
 				21F99D382D9435C20082DD2D /* CustomTextField.swift in Sources */,
 				21D28F982D93003800503022 /* HeaderView.swift in Sources */,
