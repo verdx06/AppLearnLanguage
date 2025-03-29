@@ -13,13 +13,14 @@ struct SignupView: View {
     @State var isConnected = false
     
     var body: some View {
-        NavigationStack {
             VStack {
                 Spacer()
                 
                 Text("Create an Account")
                     .fredokaFont(size: 22, font: .medium)
                     .padding()
+                
+                
                 
                 CustomTextField(name: "First Name", example: "Your First Name", text: $svm.Firstname)
                 CustomTextField(name: "Last Name", example: "Your Last Name", text: $svm.Lastname)
@@ -49,14 +50,13 @@ struct SignupView: View {
                 }.padding(.top)
                 
                 Spacer(minLength: 170)
-            }
+            }.ignoresSafeArea(.keyboard)
             .navigationDestination(isPresented: $svm.isNavigate, destination: {
                 PasswordView(email: svm.email, firstName: svm.Firstname, lastName: svm.Lastname)
             })
             .modifier(NetworkModifier(isConnecting: $isConnected))
             .padding(.horizontal)
                 .header("Signup")
-        }
     }
 }
 

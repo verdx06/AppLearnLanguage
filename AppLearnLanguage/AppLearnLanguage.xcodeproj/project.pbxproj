@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210272422D97B9AB00523F4A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210272412D97B9AB00523F4A /* APIManager.swift */; };
+		210272442D97D29D00523F4A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210272432D97D29D00523F4A /* UserViewModel.swift */; };
+		210272482D97D30700523F4A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210272472D97D30700523F4A /* UserModel.swift */; };
 		2176B8B62D928B7000FFF6C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2176B8B02D928B7000FFF6C1 /* Preview Assets.xcassets */; };
 		2176B8B72D928B7000FFF6C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2176B8B32D928B7000FFF6C1 /* Assets.xcassets */; };
 		2176B8B82D928B7000FFF6C1 /* AppLearnLanguageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B8B22D928B7000FFF6C1 /* AppLearnLanguageApp.swift */; };
@@ -66,6 +69,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		210272412D97B9AB00523F4A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		210272432D97D29D00523F4A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		210272472D97D30700523F4A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		2176B89F2D928B6900FFF6C1 /* AppLearnLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppLearnLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2176B8B02D928B7000FFF6C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2176B8B22D928B7000FFF6C1 /* AppLearnLanguageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLearnLanguageApp.swift; sourceTree = "<group>"; };
@@ -169,6 +175,7 @@
 			children = (
 				21F99D492D95216C0082DD2D /* Service */,
 				21D34D5C2D9336F20025979F /* QueueModel.swift */,
+				210272472D97D30700523F4A /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 			children = (
 				21F99D3E2D943E5E0082DD2D /* SignViewModel.swift */,
 				21F99D402D9443310082DD2D /* PDFKitView.swift */,
+				210272432D97D29D00523F4A /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -401,6 +409,7 @@
 		21F99D492D95216C0082DD2D /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				210272412D97B9AB00523F4A /* APIManager.swift */,
 				21F99D4A2D9521810082DD2D /* NetworkModel.swift */,
 			);
 			path = Service;
@@ -532,12 +541,14 @@
 				21D34D802D93E00B0025979F /* LanguageViewModel.swift in Sources */,
 				21D28F952D92FFEC00503022 /* SelectLanguageView.swift in Sources */,
 				2176B8B92D928B7000FFF6C1 /* OnboardingView.swift in Sources */,
+				210272442D97D29D00523F4A /* UserViewModel.swift in Sources */,
 				21F99D4F2D952E520082DD2D /* NetworkView.swift in Sources */,
 				21D34D5D2D9336F20025979F /* QueueModel.swift in Sources */,
 				21F99D382D9435C20082DD2D /* CustomTextField.swift in Sources */,
 				21D28F982D93003800503022 /* HeaderView.swift in Sources */,
 				21D34D7C2D93DB4D0025979F /* WordGameView.swift in Sources */,
 				21A491682D9416C10049BD16 /* SignupView.swift in Sources */,
+				210272482D97D30700523F4A /* UserModel.swift in Sources */,
 				21F99D412D9443310082DD2D /* PDFKitView.swift in Sources */,
 				2176B9172D92B41300FFF6C1 /* View.swift in Sources */,
 				21D28F9A2D9309FB00503022 /* Language.swift in Sources */,
@@ -545,6 +556,7 @@
 				21F99D3D2D943DFF0082DD2D /* PasswordView.swift in Sources */,
 				2176B8D32D92AD0B00FFF6C1 /* Constants.swift in Sources */,
 				21A491642D9416830049BD16 /* LoginView.swift in Sources */,
+				210272422D97B9AB00523F4A /* APIManager.swift in Sources */,
 				21F99D482D9463880082DD2D /* ProfileView.swift in Sources */,
 				2176B91C2D92B72A00FFF6C1 /* MainButtonStyle.swift in Sources */,
 			);

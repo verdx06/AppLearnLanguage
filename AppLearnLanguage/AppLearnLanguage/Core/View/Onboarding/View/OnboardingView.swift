@@ -12,7 +12,6 @@ struct OnboardingView: View {
     @StateObject var vm = ViewModel()
     
     var body: some View {
-        NavigationStack {
             VStack {
                 Spacer()
                 Spacer()
@@ -54,7 +53,6 @@ struct OnboardingView: View {
                 
             }.padding()
         }
-    }
 }
 
 #Preview {

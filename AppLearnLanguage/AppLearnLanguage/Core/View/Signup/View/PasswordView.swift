@@ -19,7 +19,6 @@ struct PasswordView: View {
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
-        NavigationStack {
             VStack {
                 Spacer()
                 
@@ -83,6 +82,9 @@ struct PasswordView: View {
                 
                 Spacer(minLength: 170)
             }
+            .fullScreenCover(isPresented: $svm.isNavigate, content: {
+                ProfileView()
+            })
             .modifier(NetworkModifier(isConnecting: $isConnected))
             .onAppear(perform: {
                 svm.email = email
@@ -97,7 +99,6 @@ struct PasswordView: View {
                 dismiss()
             }
         }
-    }
 }
 
 #Preview {

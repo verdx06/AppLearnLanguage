@@ -50,7 +50,11 @@ struct LoginView: View {
             }.padding(.top)
             
             Spacer(minLength: 180)
-        }.padding(.horizontal)
+        }.ignoresSafeArea(.keyboard)
+        .fullScreenCover(isPresented: $svm.isNavigate, content: {
+            ProfileView()
+        })
+        .padding(.horizontal)
         .modifier(NetworkModifier(isConnecting: $isConnected))
         .header("Login") {
             dismiss()
